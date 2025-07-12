@@ -27,7 +27,6 @@ const FilterSidebar = () => {
     "Beige",
     "Navy",
   ];
-
   const sizes = ["XS", "S", "M", "L", "XL", "XXL"];
   const materials = [
     "Cotton",
