@@ -8,6 +8,7 @@ import Regiser from "./pages/Regiser";
 import Profile from "./pages/Profile";
 import CollectionPage from "./pages/CollectionPage";
 import ProductDetails from "./components/Products/ProductDetails";
+import CheckOut from "./components/Cart/CheckOut";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="profile" element={<Profile />} />
           <Route path="collections/:collections" element={<CollectionPage />} />
           <Route path="product/:id" element={<ProductDetails />} />
+          <Route path="checkout" element={<CheckOut />} />
         </Route>
         <Route>{/* Admin layout */}</Route>
       </Routes>
