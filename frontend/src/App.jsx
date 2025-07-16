@@ -12,6 +12,8 @@ import CheckOut from "./components/Cart/CheckOut";
 import OrderConfirmationPage from "./pages/OrderConfirmationPage";
 import OrderDetailsPage from "./pages/OrderDetailsPage";
 import MyOrdersPage from "./pages/MyOrdersPage";
+import AdminLayout from "./components/Admin/AdminLayout";
+import AdminHomePage from "./pages/AdminHomePage";
 
 const App = () => {
   return (
@@ -36,7 +38,11 @@ const App = () => {
           <Route path="order/:id" element={<OrderDetailsPage />} />
           <Route path="/my-orders" element={<MyOrdersPage />} />
         </Route>
-        <Route>{/* Admin layout */}</Route>
+        {/* Admin layout with nested routes */}
+        <Route path="/admin" element={<AdminLayout />}>
+          <Route index element={<AdminHomePage />} />
+          {/* future: <Route path="users" element={<AdminUsers />} /> etc */}
+        </Route>
       </Routes>
     </BrowserRouter>
   );
