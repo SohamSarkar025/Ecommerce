@@ -15,7 +15,6 @@ Deployed via **Netlify**, developed using **React**, **Vite**, **Tailwind CSS**,
 ## 🌐 Live Demo
 
 👉 [View Live Site]([https://your-site-name.netlify.app](https://sohamsarkarecomweb.netlify.app/))  
-_(Replace with your actual Netlify site URL)_
 
 ---
 
