@@ -43,7 +43,7 @@ const productSchema = mongoose.Schema(
       required: true,
     },
     collections: {
-      type: String,
+      type: [String],
       required: true,
     },
     material: {
@@ -78,7 +78,7 @@ const productSchema = mongoose.Schema(
     },
     numReviews: {
       type: Number,
-      default0,
+      default: 0,
     },
     tags: [String],
     user: {
