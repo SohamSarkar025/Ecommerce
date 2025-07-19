@@ -237,6 +237,7 @@ router.get("/", async (req, res) => {
     res.status(500).send("Server Error");
   }
 });
+
 //@route GET /api/products/best-seller
 //@desc Retrieves the product with highest rating
 //@access Public
@@ -255,7 +256,20 @@ router.get("/best-seller", async (req, res) => {
     res.status(500).json("Server Error");
   }
 });
+//@route GET /api/products/new-arrivals
+//@desc Retrieve latest 8 products - Creation date
+//@access Public
 
+router.get("/new-arrivals", async (req, res) => {
+  try {
+    //Fetch 8 Products from the database
+    const newArrivals = await Product.find().sort({ createdAt: -1 }).limit(8);
+    res.json(newArrivals);
+  } catch (error) {
+    console.log(error);
+    res.status(500).json("Server Error");
+  }
+});
 //@route GET /api/products/:id
 //@desc  Get a single produt by ID
 //@access Public
