@@ -30,7 +30,7 @@ app.get("/", (req, res) => {
   res.send("Welcome to api");
 });
 //API Routes
-app.use("/api/users", userRoutes);
+app.use("/api/user", userRoutes);
 app.use("/api/products", productRoutes);
 app.use("/api/cart", cartRoutes);
 app.use("/api/checkout", checkoutRoutes);
