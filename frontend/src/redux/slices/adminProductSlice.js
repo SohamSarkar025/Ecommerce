@@ -74,7 +74,7 @@ export const deleteProduct = createAsyncThunk(
   async (id, { rejectWithValue }) => {
     try {
       await axios.delete(
-        `${import.meta.env.VITE_BACKEND_URL}/api/admin/products/${id}`,
+        `${import.meta.env.VITE_BACKEND_URL}/api/products/${id}`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("userToken")}`,
