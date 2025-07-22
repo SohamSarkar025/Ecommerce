@@ -15,7 +15,12 @@ const adminOrderRoutes = require("./routes/adminOrderRoutes");
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://ecommerce-4acy.vercel.app", // ✅ Your frontend domain on Vercel
+    credentials: true, // optional, if you're using cookies/auth
+  })
+);
 
 dotenv.config();
 
