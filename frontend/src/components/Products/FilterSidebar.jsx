@@ -61,10 +61,10 @@ const FilterSidebar = () => {
       size: params.size ? params.size.split(",") : [],
       material: params.material ? params.material.split(",") : [],
       minPrice: params.minPrice || 0,
-      maxPrice: params.maxPrice || 100,
+      maxPrice: params.maxPrice || 5000,
       brand: params.brand ? params.brand.split(",") : [],
     });
-    setPriceRange([0, params.maxPrice || 100]);
+    setPriceRange([0, params.maxPrice || 5000]);
   }, [searchParams]);
 
   const handleFilterChange = (e) => {
@@ -100,7 +100,7 @@ const FilterSidebar = () => {
     const newPrice = e.target.value;
     setPriceRange([0, newPrice]);
     const newFilters = { ...filters, minPrice: 0, maxPrice: newPrice };
-    setFilters(filters);
+    setFilters(newFilters);
     updateURLParams(newFilters);
   };
   return (
@@ -226,14 +226,14 @@ const FilterSidebar = () => {
           type="range"
           name="priceRange"
           min={0}
-          max={100}
+          max={10000}
           value={priceRange[1]}
           onChange={handlePriceChange}
           className="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer"
         />
         <div className="flex justify-between text-gray-600 mt-2">
-          <span>$0</span>
-          <span>${priceRange[1]}</span>
+          <span>Rs 0</span>
+          <span>Rs {priceRange[1]}</span>
         </div>
       </div>
     </div>
