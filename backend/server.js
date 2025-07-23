@@ -21,7 +21,7 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: "https://soham-ecom.onrender.com/",
+    origin: "https://soham-ecom.onrender.com",
     credentials: true,
   })
 );
