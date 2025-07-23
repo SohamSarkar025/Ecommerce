@@ -51,7 +51,12 @@ const Home = () => {
       {bestSellerProduct ? (
         <ProductDetails productId={bestSellerProduct._id} />
       ) : (
-        <p className="text-center">Loading best seller product....</p>
+        <div className="flex flex-col items-center justify-center py-10">
+          <div className="animate-spin rounded-full h-8 w-8 border-4 border-t-transparent border-blue-500 mb-4"></div>
+          <p className="text-center text-gray-600 text-sm md:text-base font-medium">
+            Loading best seller products...
+          </p>
+        </div>
       )}
 
       <div className="container mx-auto">
