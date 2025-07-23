@@ -117,8 +117,8 @@ const products = [
     name: "Slim-Fit Easy-Iron Shirt",
     description:
       "A slim-fit, easy-iron shirt in woven cotton fabric with a fitted silhouette. Features a turn-down collar, classic button placket, and a yoke at the back. Long sleeves and adjustable button cuffs with a rounded hem.",
-    price: 899,
-    discountPrice: 699,
+    price: 34.99,
+    discountPrice: 29.99,
     countInStock: 30,
     sku: "SLIM-EIR-005",
     category: "Top Wear",

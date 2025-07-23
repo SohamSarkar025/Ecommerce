@@ -82,7 +82,16 @@ const CheckOut = () => {
   };
 
   if (loading) {
-    <p>Loading Cart..</p>;
+    return (
+      <div className="flex items-center justify-center h-screen bg-white">
+        <div className="flex flex-col items-center">
+          <div className="w-16 h-16 border-4 border-blue-500 border-dashed rounded-full animate-spin"></div>
+          <p className="mt-4 text-xl text-blue-600 font-semibold animate-pulse">
+            Loading, please wait...
+          </p>
+        </div>
+      </div>
+    );
   }
   if (error) {
     <p>Error: {error}</p>;
@@ -259,13 +268,13 @@ const CheckOut = () => {
                   <p className="text-gray-500">Color:{product.color}</p>
                 </div>
               </div>
-              <p className="text-xl">${product.price?.toLocaleString()}</p>
+              <p className="text-xl">Rs {product.price?.toLocaleString()}</p>
             </div>
           ))}
         </div>
         <div className="flex justify-between items-center text-lg mb-4">
           <p>Subtotal</p>
-          <p>${cart.totalPrice?.toLocaleString()}</p>
+          <p>Rs {cart.totalPrice?.toLocaleString()}</p>
         </div>
         <div className="flex justify-between items-center text-lg">
           <p>Shipping</p>
@@ -273,7 +282,7 @@ const CheckOut = () => {
         </div>
         <div className="flex justify-between items-center text-lg mt-4 border-t pt-4">
           <p>Total</p>
-          <p>${cart.totalPrice?.toLocaleString()}</p>
+          <p>Rs {cart.totalPrice?.toLocaleString()}</p>
         </div>
       </div>
     </div>

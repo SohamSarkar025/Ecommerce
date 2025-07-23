@@ -70,8 +70,18 @@ const ProductDetails = ({ productId }) => {
       });
   };
   if (loading) {
-    return <p>Loading...</p>;
+    return (
+      <div className="flex items-center justify-center h-screen bg-white">
+        <div className="flex flex-col items-center">
+          <div className="w-16 h-16 border-4 border-blue-500 border-dashed rounded-full animate-spin"></div>
+          <p className="mt-4 text-xl text-blue-600 font-semibold animate-pulse">
+            Loading, please wait...
+          </p>
+        </div>
+      </div>
+    );
   }
+
   if (error) {
     <p>Error: {error}</p>;
   }
@@ -128,14 +138,21 @@ const ProductDetails = ({ productId }) => {
                 {selectedProduct.name}
               </h1>
 
-              <p className="text-lg text-gray-600 mb-1 line-through">
-                Rs{" "}
-                {selectedProduct.originalPrice &&
-                  `${selectedProduct.originalPrice}`}
-              </p>
-              <p className="text-xl text-gray-500 mb-2">
-                Rs {selectedProduct.price}
-              </p>
+              {selectedProduct.discountPrice ? (
+                <>
+                  <p className="text-lg text-gray-600 mb-1 line-through">
+                    Rs {selectedProduct.discountPrice}
+                  </p>
+                  <p className="text-xl text-gray-500 mb-2">
+                    Rs {selectedProduct.price}
+                  </p>
+                </>
+              ) : (
+                <p className="text-xl text-gray-500 mb-2">
+                  Rs {selectedProduct.price}
+                </p>
+              )}
+
               <p className="text-gray-600 mb-4">
                 {selectedProduct.description}
               </p>

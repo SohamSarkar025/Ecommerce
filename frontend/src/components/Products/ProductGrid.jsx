@@ -3,7 +3,16 @@ import { Link } from "react-router-dom";
 
 const ProductGrid = ({ products, loading, error }) => {
   if (loading) {
-    return <p>Loading...</p>;
+    return (
+      <div className="flex items-center justify-center h-screen bg-white">
+        <div className="flex flex-col items-center">
+          <div className="w-16 h-16 border-4 border-blue-500 border-dashed rounded-full animate-spin"></div>
+          <p className="mt-4 text-xl text-blue-600 font-semibold animate-pulse">
+            Loading, please wait...
+          </p>
+        </div>
+      </div>
+    );
   }
 
   if (error) {
@@ -23,7 +32,7 @@ const ProductGrid = ({ products, loading, error }) => {
             </div>
             <h3 className="text-sm mb-2">{product.name}</h3>
             <p className="text-gray-500 font-medium text-sm tracking-tighter">
-              ${product.price}
+              Rs {product.price}
             </p>
           </div>
         </Link>
