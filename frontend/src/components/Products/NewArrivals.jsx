@@ -129,7 +129,7 @@ const NewArrivals = () => {
             >
               <Link to={`/product/${product._id}`} className="block">
                 <h4 className="font-medium">{product.name}</h4>
-                <p className="mt-1">${product.price}</p>
+                <p className="mt-1">Rs {product.price}</p>
               </Link>
             </div>
           </div>

@@ -65,7 +65,14 @@ const UserManagement = () => {
   return (
     <div className="max-w-7xl mx-auto p-6">
       <h2 className="text-2xl font-bold mb-6">User Management</h2>
-      {loading && <p>Loading...</p>}
+      {loading && (
+        <div className="flex flex-col items-center justify-center py-10">
+          <div className="animate-spin rounded-full h-8 w-8 border-4 border-t-transparent border-blue-500 mb-4"></div>
+          <p className="text-center text-gray-600 text-sm md:text-base font-medium">
+            Loading best seller products...
+          </p>
+        </div>
+      )}
       {error && <p>Error: {error}</p>}
       {/* Add New User Form */}
       <div className="p-6 rounded-lg mb-6">
