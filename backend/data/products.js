@@ -366,7 +366,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=12",
+        url: "https://res.cloudinary.com/dh0z1k1j6/image/upload/v1753358190/DenimJenas1_sysvf5.jpg",
         altText: "Denim Jeans Front View",
       },
     ],
@@ -390,7 +390,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=13",
+        url: "https://res.cloudinary.com/dh0z1k1j6/image/upload/v1753358167/Chino_Pansts1_crmvt7.jpg",
         altText: "Chino Pants Front View",
       },
     ],
@@ -414,7 +414,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=14",
+        url: "https://res.cloudinary.com/dh0z1k1j6/image/upload/v1753358127/TracksPants1_zdb3qu.jpg",
         altText: "Track Pants Front View",
       },
     ],
@@ -438,7 +438,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=15",
+        url: "https://res.cloudinary.com/dh0z1k1j6/image/upload/v1753358093/Trousers1_qbxjik.jpg",
         altText: "Slim Fit Trousers Front View",
       },
     ],
@@ -486,7 +486,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=17",
+        url: "https://res.cloudinary.com/dh0z1k1j6/image/upload/v1753358057/SweatPants1_hzr9zw.jpg",
         altText: "Relaxed Fit Sweatpants Front View",
       },
     ],
@@ -510,7 +510,7 @@ const products = [
     gender: "Men",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=18",
+        url: "https://res.cloudinary.com/dh0z1k1j6/image/upload/v1753358013/Formal1_nnxb9a.jpg",
         altText: "Formal Dress Pants Front View",
       },
     ],
@@ -534,7 +534,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=19",
+        url: "https://res.cloudinary.com/dh0z1k1j6/image/upload/v1753358491/Jeans_syvufg.jpg",
         altText: "High-Waist Skinny Jeans",
       },
     ],
@@ -558,7 +558,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=20",
+        url: "https://res.cloudinary.com/dh0z1k1j6/image/upload/v1753358444/Trousers_oqpb9p.jpg",
         altText: "Wide-Leg Trousers Front View",
       },
     ],
@@ -576,13 +576,13 @@ const products = [
     category: "Bottom Wear",
     brand: "ComfyFit",
     sizes: ["S", "M", "L", "XL"],
-    colors: ["Black", "Gray", "Navy"],
+    colors: ["Yellow", "Gray", "Navy"],
     collections: "Activewear Collection",
     material: "Cotton Blend",
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=21",
+        url: "https://res.cloudinary.com/dh0z1k1j6/image/upload/v1753357825/Leggisngs1_d5vuvw.jpg",
         altText: "Stretch Leggings Front View",
       },
     ],
@@ -600,13 +600,13 @@ const products = [
     category: "Bottom Wear",
     brand: "ChicStyle",
     sizes: ["S", "M", "L"],
-    colors: ["Pink", "Navy", "Black"],
+    colors: ["Navy", "Black"],
     collections: "Spring Collection",
     material: "Polyester",
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=22",
+        url: "https://res.cloudinary.com/dh0z1k1j6/image/upload/v1753357667/MidiSkirt_xe0npw.jpg",
         altText: "Pleated Midi Skirt Front View",
       },
     ],
@@ -624,13 +624,13 @@ const products = [
     category: "Bottom Wear",
     brand: "BreezyVibes",
     sizes: ["S", "M", "L", "XL"],
-    colors: ["White", "Beige", "Light Blue"],
+    colors: ["White", "Beige", "Blue"],
     collections: "Summer Collection",
     material: "Linen Blend",
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=23",
+        url: "https://res.cloudinary.com/dh0z1k1j6/image/upload/v1753357625/Palazoo_Pants1_eqcoks.jpg",
         altText: "Flared Palazzo Pants Front View",
       },
     ],
@@ -654,7 +654,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=24",
+        url: "https://res.cloudinary.com/dh0z1k1j6/image/upload/v1753357571/Joggers_dolpbk.jpg",
         altText: "High-Rise Joggers Front View",
       },
     ],
@@ -678,7 +678,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=25",
+        url: "https://res.cloudinary.com/dh0z1k1j6/image/upload/v1753357536/Shorts_u4zrue.jpg",
         altText: "Paperbag Waist Shorts Front View",
       },
     ],
@@ -702,7 +702,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=26",
+        url: "https://res.cloudinary.com/dh0z1k1j6/image/upload/v1753357504/DenimShorts_zxihyu.jpg",
         altText: "Stretch Denim Shorts Front View",
       },
     ],
@@ -726,7 +726,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=27",
+        url: "https://res.cloudinary.com/dh0z1k1j6/image/upload/v1753357423/Culo_iaohct.jpg",
         altText: "Culottes Front View",
       },
     ],
@@ -750,7 +750,7 @@ const products = [
     gender: "Women",
     images: [
       {
-        url: "https://picsum.photos/500/500?random=28",
+        url: "https://res.cloudinary.com/dh0z1k1j6/image/upload/v1753357405/Trousers2_zdugxz.jpg",
         altText: "Classic Pleated Trousers Front View",
       },
     ],
