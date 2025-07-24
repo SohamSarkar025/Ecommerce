@@ -14,7 +14,7 @@ Deployed via **Netlify**, developed using **React**, **Vite**, **Tailwind CSS**,
 
 ## 🌐 Live Demo
 
-👉 [View Live Site](https://sohamsarkarecomweb.netlify.app/)  
+👉 [View Live Site](https://soham-ecom.onrender.com/)  
 
 ---
 
